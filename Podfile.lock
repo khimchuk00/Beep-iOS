@@ -1,0 +1,29 @@
+PODS:
+  - Alamofire (5.4.4)
+  - FlagPhoneNumber (0.8.0):
+    - FlagPhoneNumber/libPhoneNumberiOS (= 0.8.0)
+  - FlagPhoneNumber/libPhoneNumberiOS (0.8.0)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - FlagPhoneNumber
+  - Moya
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FlagPhoneNumber
+    - Moya
+
+SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  FlagPhoneNumber: 3712455b95f66cb0f2016fef7d9e34cddf8c7f9a
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+
+PODFILE CHECKSUM: 07aeae7320867cae5269b5c535ac995cbb0588c1
+
+COCOAPODS: 1.11.2

@@ -1,0 +1,41 @@
+"Onboarding-first-title" = "Benvenuto in BEEP.NFC! Una comoda applicazione per la gestione dei tuoi dati \n 😍";
+"Onboarding-second-title" = "Modificare i dati è facile e semplice, provalo👌🏻";
+"Onboarding-second-description" = "Modificare, duplicare, correggere. Tutto in un posto";
+"Onboarding-third-title" = "Connessione veloce con il tuo prodotto e sincronizzazione";
+"Onboarding-third-description" = "Lo cambi nell'applicazione, i dati cambiano immediatamente sul sito";
+"Onboarding-enter" = "Entrare";
+"Onboarding-register" = "Registrazione";
+
+"Settings-plan-cell-title" = "Il mio piano";
+"Settings-plan-cell-description" = "Attivare";
+"Settings-plan-cell-month-description" = "Mese";
+"Settings-plan-cell-half-description" = "Per sei mesi";
+"Settings-plan-cell-year-description" = "Per un anno";
+"Settings-ref-cell-title" = "Guadagna con il programma di riferimento";
+"Settings-profile-cell-title" = "Il tuo profilo BEEP";
+"Settings-theme-black-cell-title" = "BEEP stile biglietto da visita: scuro";
+"Settings-theme-white-cell-title" = "BEEP stile biglietto da visita: luce";
+"Settings-callUs-cell-title" = "Contattaci";
+"Settings-activate-cell-title" = "Attiva BEEP";
+"Settings-howToUse-cell-title" = "Come usare BEEP";
+"Settings-delete-cell-title" = "Elimina profilo";
+"Settings-password-cell-title" = "Cambia la password";
+"Settings-exit-cell-title" = "Disconnettersi";
+"Settings-light-mode-title" = "Tema chiaro";
+"Settings-dark-mode-title" = "Tema scuro";
+"Settings-language-title" = "Impostazioni della lingua:";
+
+"Dashboard-networks-title" = "Соціальні мережі";
+"Dashboard-messgers-title" = "Месенджери";
+"Dashboard-contacts-title" = "Особисті контакти";
+"Dashboard-music-title" = "Музичні платформи";
+"Dashboard-videos-title" = "Відеохостинги";
+"Dashboard-moneys-title" = "Грошові перекази";
+"Dashboard-portfolio-title" = "Портфоліо";
+"Dashboard-games-title" = "Геймінг";
+"Dashboard-review-title" = "Залишити відгук";
+"Dashboard-getThere-title" = "Як добратись";
+
+"TabBar-card-title" = "Mio visita";
+"TabBar-code-title" = "Mio qr-code";
+"TabBar-settings-title" = "Impostazioni";

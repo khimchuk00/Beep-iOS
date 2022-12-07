@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Bold.ttf">
+            <string>Roboto-Bold</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="Y6W-OH-hqX" customClass="OnboardingViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo_img" translatesAutoresizingMaskIntoConstraints="NO" id="liz-dZ-Hhc">
+                                <rect key="frame" x="25" y="49" width="79" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="6lW-Lm-R2K"/>
+                                    <constraint firstAttribute="width" constant="79" id="70T-2P-4f0"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ngq-Jk-mll" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                <rect key="frame" x="322" y="49" width="67" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="pge-5B-kvW"/>
+                                    <constraint firstAttribute="height" constant="44" id="zkj-WB-RZY"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="bottom_arrow" title="RU ">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="localizationsButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FJY-9C-rgZ"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="UYR-k6-IAe">
+                                <rect key="frame" x="20" y="801" width="374" height="65"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-HG-Axq" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="15.5" width="182.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="bb"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="enterButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7vI-fG-k0H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PAG-GN-qjQ" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                        <rect key="frame" x="191.5" y="15.5" width="182.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="bb"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="registerButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tvk-67-kla"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="KT7-Vr-UFd"/>
+                                </constraints>
+                            </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="6KE-cn-7bp">
+                                <rect key="frame" x="20" y="751" width="374" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="abw-J1-2m8"/>
+                                </constraints>
+                            </pageControl>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dxM-mS-Ac1">
+                                <rect key="frame" x="25" y="106" width="364" height="635"/>
+                                <color key="backgroundColor" name="mainWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="5EE-lT-XLb">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJi-uG-ZdV">
+                                <rect key="frame" x="322" y="91" width="67" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="-1" translatesAutoresizingMaskIntoConstraints="NO" id="QZk-Z3-2ld">
+                                        <rect key="frame" x="0.0" y="0.0" width="67" height="130"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m8R-qh-NiC" userLabel="RU" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="67" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="0mx-b2-bwJ"/>
+                                                    <constraint firstAttribute="width" constant="67" id="Gh7-U7-JHf"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="EN ">
+                                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ENButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xxK-BB-UN7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MzF-0Y-gvh" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="43" width="67" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="67" id="L1a-Nj-vzO"/>
+                                                    <constraint firstAttribute="height" constant="44" id="ebJ-vV-yfg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="IT ">
+                                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="ITButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cv6-CM-Oev"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7EJ-QB-oBu" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="86" width="67" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="KbA-r3-jXP"/>
+                                                    <constraint firstAttribute="width" constant="67" id="KiH-KU-pzq"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="UA">
+                                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                                    <color key="baseForegroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </buttonConfiguration>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="UAButtonDidTap" destination="Y6W-OH-hqX" eventType="touchUpInside" id="czJ-g0-Rvj"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="QZk-Z3-2ld" secondAttribute="trailing" id="9wH-Xd-sko"/>
+                                    <constraint firstItem="QZk-Z3-2ld" firstAttribute="leading" secondItem="uJi-uG-ZdV" secondAttribute="leading" id="FIx-Pu-lQY"/>
+                                    <constraint firstAttribute="height" constant="130" id="VmG-xW-Y8R"/>
+                                    <constraint firstAttribute="width" constant="67" id="uFf-Hv-kuu"/>
+                                    <constraint firstItem="QZk-Z3-2ld" firstAttribute="top" secondItem="uJi-uG-ZdV" secondAttribute="top" id="wBo-1T-5d4"/>
+                                    <constraint firstAttribute="bottom" secondItem="QZk-Z3-2ld" secondAttribute="bottom" id="ywe-QR-GWM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstItem="UYR-k6-IAe" firstAttribute="top" secondItem="6KE-cn-7bp" secondAttribute="bottom" constant="25" id="0ej-eO-BWM"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6KE-cn-7bp" secondAttribute="trailing" constant="20" id="COG-Bw-EHE"/>
+                            <constraint firstItem="liz-dZ-Hhc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="GE5-tK-9a5"/>
+                            <constraint firstAttribute="bottom" secondItem="UYR-k6-IAe" secondAttribute="bottom" constant="30" id="M2w-9w-q6i"/>
+                            <constraint firstItem="uJi-uG-ZdV" firstAttribute="top" secondItem="ngq-Jk-mll" secondAttribute="bottom" constant="-2" id="NXp-Rc-TVg"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ngq-Jk-mll" secondAttribute="trailing" constant="25" id="WKR-fT-DRc"/>
+                            <constraint firstItem="liz-dZ-Hhc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="1" id="a5I-4B-3wG"/>
+                            <constraint firstItem="dxM-mS-Ac1" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="25" id="ahT-zF-LNo"/>
+                            <constraint firstItem="ngq-Jk-mll" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="1" id="c03-5C-tzJ"/>
+                            <constraint firstItem="dxM-mS-Ac1" firstAttribute="top" secondItem="liz-dZ-Hhc" secondAttribute="bottom" constant="15" id="dEA-Mh-uQV"/>
+                            <constraint firstItem="UYR-k6-IAe" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="ekT-sw-kX2"/>
+                            <constraint firstItem="6KE-cn-7bp" firstAttribute="top" secondItem="dxM-mS-Ac1" secondAttribute="bottom" constant="10" id="kAx-s6-czS"/>
+                            <constraint firstItem="uJi-uG-ZdV" firstAttribute="centerX" secondItem="ngq-Jk-mll" secondAttribute="centerX" id="qzk-Aj-zF3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UYR-k6-IAe" secondAttribute="trailing" constant="20" id="sFG-KW-GHs"/>
+                            <constraint firstItem="6KE-cn-7bp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="wPf-Wz-nsU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dxM-mS-Ac1" secondAttribute="trailing" constant="25" id="xU4-cT-g8M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ENButton" destination="m8R-qh-NiC" id="E8a-eL-Eoc"/>
+                        <outlet property="ITButton" destination="MzF-0Y-gvh" id="MZA-wg-wQY"/>
+                        <outlet property="UAButton" destination="7EJ-QB-oBu" id="g0L-5G-AvO"/>
+                        <outlet property="collectionView" destination="dxM-mS-Ac1" id="DcY-0n-DGe"/>
+                        <outlet property="enterButton" destination="g3b-HG-Axq" id="alM-hg-jIr"/>
+                        <outlet property="languagesView" destination="uJi-uG-ZdV" id="Vzg-zV-H1h"/>
+                        <outlet property="localizationsButton" destination="ngq-Jk-mll" id="Aqd-Kk-Gjs"/>
+                        <outlet property="pageControll" destination="6KE-cn-7bp" id="fv3-zn-sPo"/>
+                        <outlet property="registerButton" destination="PAG-GN-qjQ" id="j8S-Du-tX5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="115.94202898550725" y="120.53571428571428"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="eEZ-rx-yDe">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="hI0-LW-2hA" customClass="LoginViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OJx-GK-aWf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDB-id-Si8">
+                                <rect key="frame" x="10" y="63" width="75.5" height="30.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton_img" title=" Назад">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="yax-lA-otq"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Z6U-re-1bQ">
+                                <rect key="frame" x="23" y="98.5" width="368" height="83.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите ваш email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRE-bE-v1V">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="33"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                        <color key="textColor" name="mainDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iHk-dx-zDd">
+                                        <rect key="frame" x="0.0" y="48" width="368" height="35.5"/>
+                                        <string key="text">Введите свой email, который был
+подтвержден при регистрации.</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Abf-Ii-X0T">
+                                <rect key="frame" x="0.0" y="204" width="414" height="692"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="bhs-p9-dE5">
+                                        <rect key="frame" x="24" y="24" width="366" height="159"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="hPt-PX-FEr">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tdg-8b-hTD">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JUk-M8-Wsx" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="Xdx-TZ-ahQ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dKI-NR-LTe">
+                                                <rect key="frame" x="0.0" y="92.5" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ssI-5G-gvU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="*************" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4So-cF-43s" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="ohw-GD-Hth"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Войти с помощью:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="blc-v7-E7X">
+                                        <rect key="frame" x="0.0" y="227" width="414" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pII-Fn-7Fu">
+                                        <rect key="frame" x="105.5" y="261" width="203" height="57"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-bX-wXm">
+                                                <rect key="frame" x="0.0" y="0.0" width="57" height="57"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="O8N-F9-3NV"/>
+                                                    <constraint firstAttribute="width" constant="57" id="xIv-gN-z7I"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="apple_img"/>
+                                                <connections>
+                                                    <action selector="appleButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="eb7-UP-pD7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFt-od-iyC">
+                                                <rect key="frame" x="73" y="0.0" width="57" height="57"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="57" id="hwa-Lh-JhJ"/>
+                                                    <constraint firstAttribute="width" constant="57" id="jep-fJ-x5f"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="facebook_img"/>
+                                                <connections>
+                                                    <action selector="facebookButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="XSX-Ja-x9i"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J4X-CS-pYD">
+                                                <rect key="frame" x="146" y="0.0" width="57" height="57"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="57" id="hEu-9x-PNs"/>
+                                                    <constraint firstAttribute="height" constant="57" id="ppy-qt-4dE"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button" image="google_img"/>
+                                                <connections>
+                                                    <action selector="googleButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="VYS-Bz-hIK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="7gw-eR-VHU">
+                                        <rect key="frame" x="25" y="545" width="364" height="107"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rGK-P5-7RA" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="XKl-LQ-ZMS"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="A3M-JW-Mu7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A11-hj-bmm">
+                                                <rect key="frame" x="0.0" y="75" width="364" height="32"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Забыли пароль">
+                                                    <fontDescription key="titleFontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                                    <color key="baseForegroundColor" name="lightGrey"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="forgotPasswordButtonDidTap" destination="hI0-LW-2hA" eventType="touchUpInside" id="sFn-Cp-l4a"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="bhs-p9-dE5" firstAttribute="leading" secondItem="Abf-Ii-X0T" secondAttribute="leading" constant="24" id="1gT-lT-eT3"/>
+                                    <constraint firstItem="7gw-eR-VHU" firstAttribute="leading" secondItem="Abf-Ii-X0T" secondAttribute="leading" constant="25" id="9Z8-Kf-45g"/>
+                                    <constraint firstItem="pII-Fn-7Fu" firstAttribute="top" secondItem="blc-v7-E7X" secondAttribute="bottom" constant="16" id="CEM-CC-aMu"/>
+                                    <constraint firstItem="bhs-p9-dE5" firstAttribute="top" secondItem="Abf-Ii-X0T" secondAttribute="top" constant="24" id="Lvx-4C-eZ2"/>
+                                    <constraint firstItem="blc-v7-E7X" firstAttribute="leading" secondItem="Abf-Ii-X0T" secondAttribute="leading" id="NjX-AB-3bM"/>
+                                    <constraint firstAttribute="trailing" secondItem="bhs-p9-dE5" secondAttribute="trailing" constant="24" id="Tde-ym-Wnz"/>
+                                    <constraint firstItem="blc-v7-E7X" firstAttribute="top" secondItem="bhs-p9-dE5" secondAttribute="bottom" constant="44" id="Viy-Rg-TaD"/>
+                                    <constraint firstItem="pII-Fn-7Fu" firstAttribute="centerX" secondItem="blc-v7-E7X" secondAttribute="centerX" id="lOt-47-xyH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7gw-eR-VHU" secondAttribute="bottom" constant="40" id="uCA-9Q-c0Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="7gw-eR-VHU" secondAttribute="trailing" constant="25" id="zel-Sy-lct"/>
+                                    <constraint firstAttribute="trailing" secondItem="blc-v7-E7X" secondAttribute="trailing" id="zz2-qE-5Wc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eb8-uD-44K"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Abf-Ii-X0T" secondAttribute="bottom" id="0CD-Hg-YIw"/>
+                            <constraint firstItem="Z6U-re-1bQ" firstAttribute="top" secondItem="MDB-id-Si8" secondAttribute="bottom" constant="5" id="0To-UZ-mV6"/>
+                            <constraint firstItem="MDB-id-Si8" firstAttribute="leading" secondItem="eb8-uD-44K" secondAttribute="leading" constant="10" id="27C-Cb-vCc"/>
+                            <constraint firstItem="eb8-uD-44K" firstAttribute="trailing" secondItem="Abf-Ii-X0T" secondAttribute="trailing" id="7pB-qX-h0h"/>
+                            <constraint firstItem="Abf-Ii-X0T" firstAttribute="leading" secondItem="eb8-uD-44K" secondAttribute="leading" id="ARn-hV-15a"/>
+                            <constraint firstItem="Z6U-re-1bQ" firstAttribute="leading" secondItem="eb8-uD-44K" secondAttribute="leading" constant="23" id="AYt-5U-1zN"/>
+                            <constraint firstItem="Abf-Ii-X0T" firstAttribute="top" secondItem="Z6U-re-1bQ" secondAttribute="bottom" constant="22" id="NZ8-DT-WxU"/>
+                            <constraint firstItem="MDB-id-Si8" firstAttribute="top" secondItem="eb8-uD-44K" secondAttribute="top" constant="15" id="e4q-ur-s2h"/>
+                            <constraint firstItem="eb8-uD-44K" firstAttribute="trailing" secondItem="Z6U-re-1bQ" secondAttribute="trailing" constant="23" id="qkh-va-1Kd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleButton" destination="Ehd-bX-wXm" id="gwx-6U-WUY"/>
+                        <outlet property="backButton" destination="MDB-id-Si8" id="iav-yf-YFi"/>
+                        <outlet property="containerView" destination="Abf-Ii-X0T" id="Pci-PV-ioH"/>
+                        <outlet property="continueButton" destination="rGK-P5-7RA" id="Hsr-tc-oOh"/>
+                        <outlet property="descriptionLabel" destination="iHk-dx-zDd" id="rKI-aG-UFD"/>
+                        <outlet property="emailLabel" destination="tdg-8b-hTD" id="G6M-6S-Zzf"/>
+                        <outlet property="emailTextField" destination="JUk-M8-Wsx" id="1e0-02-alh"/>
+                        <outlet property="enterWithLabel" destination="blc-v7-E7X" id="d3i-Ke-Jvo"/>
+                        <outlet property="facebookButton" destination="PFt-od-iyC" id="kSJ-XU-PWG"/>
+                        <outlet property="forgotButton" destination="A11-hj-bmm" id="r9G-Ye-x5f"/>
+                        <outlet property="googleButton" destination="J4X-CS-pYD" id="yhj-BF-YPP"/>
+                        <outlet property="passwordLabel" destination="ssI-5G-gvU" id="eJt-6O-6Jw"/>
+                        <outlet property="passwordTextField" destination="4So-cF-43s" id="lTi-kc-ZLR"/>
+                        <outlet property="titleLabel" destination="aRE-bE-v1V" id="ZRP-Hh-81O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q4y-Dz-chD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="118"/>
+        </scene>
+        <!--Register View Controller-->
+        <scene sceneID="dsb-Yv-wFI">
+            <objects>
+                <viewController storyboardIdentifier="RegisterViewController" id="SmV-Ua-j5h" customClass="RegisterViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJ2-fW-96k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIb-Ak-orK">
+                                <rect key="frame" x="10" y="63" width="75.5" height="30.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton_img" title=" Назад">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap" destination="SmV-Ua-j5h" eventType="touchUpInside" id="Htc-HE-uqn"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="qzb-qD-rGB">
+                                <rect key="frame" x="23" y="98.5" width="368" height="33"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация 👋🏻" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9q-oW-iqR">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="33"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                        <color key="textColor" name="mainDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iSN-9V-qRb">
+                                <rect key="frame" x="0.0" y="153.5" width="414" height="742.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="cwF-EG-xKu">
+                                        <rect key="frame" x="24" y="24" width="366" height="392.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="t22-yb-G2q">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фамилия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MnR-fp-yhT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите свою фамилию" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpz-iB-dGS" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="zid-Nj-CRv"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте фио еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9H-q9-crQ">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Ua5-2R-ehI">
+                                                <rect key="frame" x="0.0" y="81.5" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Имя" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sjJ-fg-Nu3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Введите свое имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sPc-4D-C7J" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="ixD-G5-R96"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте фио еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BHy-JM-z5m">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ZJG-ee-8MQ">
+                                                <rect key="frame" x="0.0" y="163" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Номер телефона" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kj-6x-0nS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ncu-gv-aEZ">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fQS-S1-5lT" customClass="FPNTextField" customModule="FlagPhoneNumber">
+                                                                <rect key="frame" x="0.0" y="0.0" width="80" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="Kpf-bj-uys"/>
+                                                                    <constraint firstAttribute="width" constant="80" id="emb-Iw-Hf7"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="935513022" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cAS-9o-a4y" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                                <rect key="frame" x="80" y="0.0" width="286" height="45"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="45" id="lpX-SU-4za"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="WiK-r8-ZCb">
+                                                <rect key="frame" x="0.0" y="244.5" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5G8-ny-Zst">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="60m-BY-PvA" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="vKH-ni-PlH"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте e-mail еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vd6-Rs-A8S">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="FMm-0v-q9V">
+                                                <rect key="frame" x="0.0" y="326" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yt0-MA-FW8">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="******" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rMp-cf-5j2" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="oen-Ti-ahC"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" smartQuotesType="no"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Grf-0f-ngd">
+                                        <rect key="frame" x="25" y="637.5" width="364" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSU-YJ-yMe" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="rZg-NQ-ZPy"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonDidTap" destination="SmV-Ua-j5h" eventType="touchUpInside" id="gLA-o1-3cN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="cwF-EG-xKu" firstAttribute="leading" secondItem="iSN-9V-qRb" secondAttribute="leading" constant="24" id="I2f-Gk-gcx"/>
+                                    <constraint firstItem="Grf-0f-ngd" firstAttribute="leading" secondItem="iSN-9V-qRb" secondAttribute="leading" constant="25" id="MNk-mZ-hgM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Grf-0f-ngd" secondAttribute="trailing" constant="25" id="e7c-cz-dL8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Grf-0f-ngd" secondAttribute="bottom" constant="40" id="ehy-hl-RP0"/>
+                                    <constraint firstItem="cwF-EG-xKu" firstAttribute="top" secondItem="iSN-9V-qRb" secondAttribute="top" constant="24" id="lsr-pv-abY"/>
+                                    <constraint firstAttribute="trailing" secondItem="cwF-EG-xKu" secondAttribute="trailing" constant="24" id="wos-vc-tUh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pjH-PC-GLh"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstItem="IIb-Ak-orK" firstAttribute="top" secondItem="pjH-PC-GLh" secondAttribute="top" constant="15" id="CbR-h0-dbR"/>
+                            <constraint firstItem="qzb-qD-rGB" firstAttribute="leading" secondItem="pjH-PC-GLh" secondAttribute="leading" constant="23" id="aDI-vh-3eg"/>
+                            <constraint firstItem="iSN-9V-qRb" firstAttribute="top" secondItem="qzb-qD-rGB" secondAttribute="bottom" constant="22" id="bUY-pg-9aX"/>
+                            <constraint firstItem="IIb-Ak-orK" firstAttribute="leading" secondItem="pjH-PC-GLh" secondAttribute="leading" constant="10" id="o4G-wL-KCN"/>
+                            <constraint firstAttribute="bottom" secondItem="iSN-9V-qRb" secondAttribute="bottom" id="oCJ-Ff-yJF"/>
+                            <constraint firstItem="pjH-PC-GLh" firstAttribute="trailing" secondItem="iSN-9V-qRb" secondAttribute="trailing" id="pig-VH-e0p"/>
+                            <constraint firstItem="iSN-9V-qRb" firstAttribute="leading" secondItem="pjH-PC-GLh" secondAttribute="leading" id="r9E-Aj-8kb"/>
+                            <constraint firstItem="pjH-PC-GLh" firstAttribute="trailing" secondItem="qzb-qD-rGB" secondAttribute="trailing" constant="23" id="srL-ee-Hqg"/>
+                            <constraint firstItem="qzb-qD-rGB" firstAttribute="top" secondItem="IIb-Ak-orK" secondAttribute="bottom" constant="5" id="y5J-GY-gYI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="IIb-Ak-orK" id="5l9-zG-YRW"/>
+                        <outlet property="checkEmailLabel" destination="Vd6-Rs-A8S" id="zo4-0A-vxw"/>
+                        <outlet property="checkFioLabel" destination="O9H-q9-crQ" id="Vbr-yn-acI"/>
+                        <outlet property="containerView" destination="iSN-9V-qRb" id="ddq-Rs-BrB"/>
+                        <outlet property="continueButton" destination="cSU-YJ-yMe" id="gCz-iz-Nko"/>
+                        <outlet property="emailLabel" destination="5G8-ny-Zst" id="Fg8-1z-PE6"/>
+                        <outlet property="emailTextField" destination="60m-BY-PvA" id="2U7-Gd-HdM"/>
+                        <outlet property="fioLabel" destination="MnR-fp-yhT" id="kEa-NL-tDo"/>
+                        <outlet property="fioTextField" destination="xpz-iB-dGS" id="Hsc-TX-xMe"/>
+                        <outlet property="flagTextField" destination="fQS-S1-5lT" id="oyb-L3-nNr"/>
+                        <outlet property="nameLabel" destination="sjJ-fg-Nu3" id="CMv-wo-1NG"/>
+                        <outlet property="nameTextField" destination="sPc-4D-C7J" id="1dD-fv-L2B"/>
+                        <outlet property="numberLabel" destination="2Kj-6x-0nS" id="Szo-kP-AL9"/>
+                        <outlet property="numberTextField" destination="cAS-9o-a4y" id="j14-g3-d9R"/>
+                        <outlet property="passwordLabel" destination="Yt0-MA-FW8" id="BRy-YE-3iT"/>
+                        <outlet property="passwordTextField" destination="rMp-cf-5j2" id="cRb-Iy-7nX"/>
+                        <outlet property="titleLabel" destination="p9q-oW-iqR" id="xyb-Ng-AXG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aI-eG-srW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="118"/>
+        </scene>
+        <!--Username View Controller-->
+        <scene sceneID="Vh0-y2-aMv">
+            <objects>
+                <viewController storyboardIdentifier="UsernameViewController" id="tFu-xj-dfq" customClass="UsernameViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bqO-io-hVe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-KO-dNg">
+                                <rect key="frame" x="10" y="63" width="75.5" height="30.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton_img" title=" Назад">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap" destination="tFu-xj-dfq" eventType="touchUpInside" id="JCx-tZ-Qbb"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xqd-4Q-ZHm">
+                                <rect key="frame" x="23" y="98.5" width="368" height="89"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username 😎" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eLg-Gx-7BU">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="33"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                        <color key="textColor" name="mainDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Почти готово! Создайте имя пользователя для своей учетной записи" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gau-xg-Kwg">
+                                        <rect key="frame" x="0.0" y="48" width="368" height="41"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="64s-34-VKt">
+                                <rect key="frame" x="0.0" y="209.5" width="414" height="686.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="zf7-0X-w4L">
+                                        <rect key="frame" x="24" y="24" width="366" height="88"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="oN2-AC-4Nk">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="88"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYb-Qe-teK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="o1a-5m-eNf" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="sCZ-OH-NNY"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Моя ссылка: beep.in.ua/" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AUh-d3-AaC">
+                                                        <rect key="frame" x="0.0" y="71.5" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y6B-Qd-yT8">
+                                        <rect key="frame" x="25" y="581.5" width="364" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSa-NF-ef2" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="mBA-fM-yO7"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Зарегистрироваться"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonDidTap" destination="tFu-xj-dfq" eventType="touchUpInside" id="Q70-Sw-C2O"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ttj-f5-GsP">
+                                        <rect key="frame" x="360" y="58" width="20" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="bfk-7g-tmS"/>
+                                            <constraint firstAttribute="width" constant="20" id="vig-2a-931"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ZfH-Ev-SH8">
+                                        <rect key="frame" x="17" y="384.5" width="365" height="97"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-fx-Qey">
+                                                <rect key="frame" x="0.0" y="0.0" width="365" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Условия использования" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ytJ-bt-ezg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="316" height="31"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-rH-m2N">
+                                                        <rect key="frame" x="316" y="0.0" width="51" height="31"/>
+                                                        <color key="tintColor" name="mainBlue"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HUo-o4-Izz">
+                                                <rect key="frame" x="0.0" y="31" width="365" height="66"/>
+                                                <string key="text">Продолжая, Вы подтверждаете, что
+прочли, приняли и согласились с 
+нашими Условиями использования и
+Политикой конфиденциальности.</string>
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pvY-ba-fJP" userLabel="SeparatorView">
+                                        <rect key="frame" x="17" y="353.5" width="365" height="1"/>
+                                        <color key="backgroundColor" name="separatorBg"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="eGU-pg-2e0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ttj-f5-GsP" firstAttribute="trailing" secondItem="o1a-5m-eNf" secondAttribute="trailing" constant="-10" id="AIN-Qp-anG"/>
+                                    <constraint firstItem="zf7-0X-w4L" firstAttribute="top" secondItem="64s-34-VKt" secondAttribute="top" constant="24" id="EBr-fl-wuT"/>
+                                    <constraint firstAttribute="bottom" secondItem="y6B-Qd-yT8" secondAttribute="bottom" constant="40" id="L4D-9T-moB"/>
+                                    <constraint firstItem="Ttj-f5-GsP" firstAttribute="centerY" secondItem="o1a-5m-eNf" secondAttribute="centerY" id="Ogj-iz-gz4"/>
+                                    <constraint firstAttribute="trailing" secondItem="y6B-Qd-yT8" secondAttribute="trailing" constant="25" id="QZz-iY-CQp"/>
+                                    <constraint firstItem="y6B-Qd-yT8" firstAttribute="top" secondItem="ZfH-Ev-SH8" secondAttribute="bottom" constant="100" id="SnZ-3L-Fro"/>
+                                    <constraint firstAttribute="trailing" secondItem="zf7-0X-w4L" secondAttribute="trailing" constant="24" id="bDO-xl-sZT"/>
+                                    <constraint firstItem="ZfH-Ev-SH8" firstAttribute="leading" secondItem="64s-34-VKt" secondAttribute="leading" constant="17" id="bii-cz-jEX"/>
+                                    <constraint firstAttribute="trailing" secondItem="pvY-ba-fJP" secondAttribute="trailing" constant="32" id="c9C-ki-3Mr"/>
+                                    <constraint firstItem="pvY-ba-fJP" firstAttribute="leading" secondItem="64s-34-VKt" secondAttribute="leading" constant="17" id="hIu-NA-GVf"/>
+                                    <constraint firstItem="ZfH-Ev-SH8" firstAttribute="top" secondItem="pvY-ba-fJP" secondAttribute="bottom" constant="30" id="nbf-79-NxR"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZfH-Ev-SH8" secondAttribute="trailing" constant="32" id="ukx-UY-OXB"/>
+                                    <constraint firstItem="y6B-Qd-yT8" firstAttribute="leading" secondItem="64s-34-VKt" secondAttribute="leading" constant="25" id="vzZ-zU-w0y"/>
+                                    <constraint firstItem="zf7-0X-w4L" firstAttribute="leading" secondItem="64s-34-VKt" secondAttribute="leading" constant="24" id="yHA-GA-sds"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KBX-iG-Yc8"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstItem="cxz-KO-dNg" firstAttribute="leading" secondItem="KBX-iG-Yc8" secondAttribute="leading" constant="10" id="4EF-Db-ob4"/>
+                            <constraint firstItem="64s-34-VKt" firstAttribute="top" secondItem="xqd-4Q-ZHm" secondAttribute="bottom" constant="22" id="5jn-gW-Eoz"/>
+                            <constraint firstItem="cxz-KO-dNg" firstAttribute="top" secondItem="KBX-iG-Yc8" secondAttribute="top" constant="15" id="7pm-w4-LdO"/>
+                            <constraint firstItem="xqd-4Q-ZHm" firstAttribute="top" secondItem="cxz-KO-dNg" secondAttribute="bottom" constant="5" id="9SI-M5-0VV"/>
+                            <constraint firstItem="xqd-4Q-ZHm" firstAttribute="leading" secondItem="KBX-iG-Yc8" secondAttribute="leading" constant="23" id="DyE-is-cBF"/>
+                            <constraint firstItem="KBX-iG-Yc8" firstAttribute="trailing" secondItem="xqd-4Q-ZHm" secondAttribute="trailing" constant="23" id="P6o-H1-HHK"/>
+                            <constraint firstAttribute="bottom" secondItem="64s-34-VKt" secondAttribute="bottom" id="c7I-3d-VJt"/>
+                            <constraint firstItem="64s-34-VKt" firstAttribute="leading" secondItem="KBX-iG-Yc8" secondAttribute="leading" id="ofY-mj-pYi"/>
+                            <constraint firstItem="KBX-iG-Yc8" firstAttribute="trailing" secondItem="64s-34-VKt" secondAttribute="trailing" id="sbv-oI-oFC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="cxz-KO-dNg" id="PFt-T4-unC"/>
+                        <outlet property="confirmationLabel" destination="HUo-o4-Izz" id="LAK-Cb-hX2"/>
+                        <outlet property="containerView" destination="64s-34-VKt" id="uCt-vb-fda"/>
+                        <outlet property="continueButton" destination="jSa-NF-ef2" id="W0Q-2a-0X5"/>
+                        <outlet property="descriptionLabel" destination="gau-xg-Kwg" id="TrR-HU-xCg"/>
+                        <outlet property="linkLabel" destination="AUh-d3-AaC" id="a3i-7f-wlO"/>
+                        <outlet property="titleLabel" destination="eLg-Gx-7BU" id="01i-On-35H"/>
+                        <outlet property="usagesLabel" destination="ytJ-bt-ezg" id="kvP-eY-EDH"/>
+                        <outlet property="usagesSwitch" destination="h2m-rH-m2N" id="fcI-29-u5j"/>
+                        <outlet property="usernameCheckImageView" destination="Ttj-f5-GsP" id="pwb-Wv-5WN"/>
+                        <outlet property="usernameLabel" destination="BYb-Qe-teK" id="uLu-bo-Tgb"/>
+                        <outlet property="usernameTextField" destination="o1a-5m-eNf" id="f7T-qS-eJV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WFV-Vv-ghl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2255" y="118"/>
+        </scene>
+        <!--Forgot Password View Controller-->
+        <scene sceneID="kKG-f1-1hh">
+            <objects>
+                <viewController storyboardIdentifier="ForgotPasswordViewController" id="she-SR-fLC" customClass="ForgotPasswordViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kfA-4l-qfh">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9b0-3x-eqQ">
+                                <rect key="frame" x="10" y="63" width="75.5" height="30.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton_img" title=" Назад">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap" destination="she-SR-fLC" eventType="touchUpInside" id="crl-PH-0SW"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="m9r-Le-YiV">
+                                <rect key="frame" x="23" y="98.5" width="368" height="83.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите ваш email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqd-ai-Pti">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="33"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="28"/>
+                                        <color key="textColor" name="mainDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4x1-Kp-Lk0">
+                                        <rect key="frame" x="0.0" y="48" width="368" height="35.5"/>
+                                        <string key="text">Введите свой email, который был
+подтвержден при регистрации.</string>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QSM-gM-Pfr">
+                                <rect key="frame" x="0.0" y="204" width="414" height="692"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="1cS-dW-BSD">
+                                        <rect key="frame" x="24" y="24" width="366" height="66.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="CP5-0t-STs">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqC-3o-vmc">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="example@gmail.com" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KX7-98-YcW" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="h4W-34-yVi"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте e-mail еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X3w-So-wsH">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="cy3-HU-uaY">
+                                        <rect key="frame" x="25" y="587" width="364" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3w-Rt-a0U" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="PKt-wq-bgE"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonDidTap" destination="she-SR-fLC" eventType="touchUpInside" id="Ibh-Ll-ahx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="1cS-dW-BSD" firstAttribute="leading" secondItem="QSM-gM-Pfr" secondAttribute="leading" constant="24" id="DYV-Xa-KhZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="cy3-HU-uaY" secondAttribute="bottom" constant="40" id="FgU-nm-rAf"/>
+                                    <constraint firstItem="cy3-HU-uaY" firstAttribute="leading" secondItem="QSM-gM-Pfr" secondAttribute="leading" constant="25" id="oZ5-9e-ZT5"/>
+                                    <constraint firstItem="1cS-dW-BSD" firstAttribute="top" secondItem="QSM-gM-Pfr" secondAttribute="top" constant="24" id="ow1-tG-81d"/>
+                                    <constraint firstAttribute="trailing" secondItem="cy3-HU-uaY" secondAttribute="trailing" constant="25" id="qMk-lN-Nqs"/>
+                                    <constraint firstAttribute="trailing" secondItem="1cS-dW-BSD" secondAttribute="trailing" constant="24" id="siy-SC-iQr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="9Mh-ip-YWh"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstItem="9b0-3x-eqQ" firstAttribute="leading" secondItem="9Mh-ip-YWh" secondAttribute="leading" constant="10" id="8id-tN-83e"/>
+                            <constraint firstItem="QSM-gM-Pfr" firstAttribute="top" secondItem="m9r-Le-YiV" secondAttribute="bottom" constant="22" id="AXx-11-rXe"/>
+                            <constraint firstAttribute="bottom" secondItem="QSM-gM-Pfr" secondAttribute="bottom" id="O5K-sC-wfY"/>
+                            <constraint firstItem="9Mh-ip-YWh" firstAttribute="trailing" secondItem="QSM-gM-Pfr" secondAttribute="trailing" id="Pm2-Yl-orf"/>
+                            <constraint firstItem="m9r-Le-YiV" firstAttribute="leading" secondItem="9Mh-ip-YWh" secondAttribute="leading" constant="23" id="bgj-eK-pJT"/>
+                            <constraint firstItem="m9r-Le-YiV" firstAttribute="top" secondItem="9b0-3x-eqQ" secondAttribute="bottom" constant="5" id="lfp-Ew-keB"/>
+                            <constraint firstItem="9b0-3x-eqQ" firstAttribute="top" secondItem="9Mh-ip-YWh" secondAttribute="top" constant="15" id="oKW-kL-oah"/>
+                            <constraint firstItem="QSM-gM-Pfr" firstAttribute="leading" secondItem="9Mh-ip-YWh" secondAttribute="leading" id="pvP-rQ-nAG"/>
+                            <constraint firstItem="9Mh-ip-YWh" firstAttribute="trailing" secondItem="m9r-Le-YiV" secondAttribute="trailing" constant="23" id="z7p-uF-nUe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="9b0-3x-eqQ" id="Ycz-Pz-Qgh"/>
+                        <outlet property="checkEmailLabel" destination="X3w-So-wsH" id="TwB-DY-8Ye"/>
+                        <outlet property="containerView" destination="QSM-gM-Pfr" id="rIm-mX-3hz"/>
+                        <outlet property="continueButton" destination="e3w-Rt-a0U" id="bPW-GQ-Mah"/>
+                        <outlet property="emailLabel" destination="sqC-3o-vmc" id="k76-EH-1Gh"/>
+                        <outlet property="emailTextField" destination="KX7-98-YcW" id="sow-GF-8XS"/>
+                        <outlet property="titleLabel" destination="pqd-ai-Pti" id="p98-OK-n7N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I2x-vu-2Qe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="880" y="782"/>
+        </scene>
+        <!--Code View Controller-->
+        <scene sceneID="wwZ-4J-ayT">
+            <objects>
+                <viewController storyboardIdentifier="CodeViewController" id="Clh-Si-U31" customClass="CodeViewController" customModule="BeepIos" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIL-9b-Fqy">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4qG-KB-crX">
+                                <rect key="frame" x="10" y="63" width="75.5" height="30.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="backButton_img" title=" Назад">
+                                    <fontDescription key="titleFontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="backButtonDidTap" destination="Clh-Si-U31" eventType="touchUpInside" id="4x5-Wr-NzK"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XEu-R0-abt">
+                                <rect key="frame" x="23" y="98.5" width="368" height="65"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код подтверджения" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jl8-A6-yJT">
+                                        <rect key="frame" x="0.0" y="0.0" width="368" height="32"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="27"/>
+                                        <color key="textColor" name="mainDark"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите код, который был отправлен на email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oNI-NI-VSe">
+                                        <rect key="frame" x="0.0" y="47" width="368" height="18"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="15"/>
+                                        <color key="textColor" name="lightGrey"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KBZ-te-dmh">
+                                <rect key="frame" x="0.0" y="185.5" width="414" height="710.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="5oK-Ai-h6B">
+                                        <rect key="frame" x="24" y="24" width="366" height="229.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ce4-VK-SpS">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Код" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o6R-PE-NGx">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0It-V0-nfM" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="GOV-59-cjE"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте e-mail еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uej-q5-dXk">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cRk-a1-VVZ">
+                                                <rect key="frame" x="0.0" y="81.5" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uls-DN-DwT">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jsd-i0-FxZ" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="Cn0-xJ-IMf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте e-mail еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sC2-Ge-xEx">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="cKB-9A-qaY">
+                                                <rect key="frame" x="0.0" y="163" width="366" height="66.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Повторите пароль" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoC-8V-hBd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="366" height="16.5"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OUn-ci-o3S" customClass="MainTextField" customModule="BeepIos" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="21.5" width="366" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="b8k-Wn-8py"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Проверьте e-mail еще раз" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WjX-F0-VMX">
+                                                        <rect key="frame" x="0.0" y="66.5" width="366" height="0.0"/>
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <color key="textColor" name="mainRed"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="47X-eg-6ZR">
+                                        <rect key="frame" x="25" y="605.5" width="364" height="65"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uts-JQ-6d6" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="364" height="65"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="65" id="xfj-Bo-mVl"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Продолжить"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonDidTap" destination="Clh-Si-U31" eventType="touchUpInside" id="FMY-Fe-vn6"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="5oK-Ai-h6B" firstAttribute="top" secondItem="KBZ-te-dmh" secondAttribute="top" constant="24" id="815-A9-OxX"/>
+                                    <constraint firstAttribute="bottom" secondItem="47X-eg-6ZR" secondAttribute="bottom" constant="40" id="Hm0-Jz-hRs"/>
+                                    <constraint firstAttribute="trailing" secondItem="47X-eg-6ZR" secondAttribute="trailing" constant="25" id="VnT-AO-O39"/>
+                                    <constraint firstItem="47X-eg-6ZR" firstAttribute="leading" secondItem="KBZ-te-dmh" secondAttribute="leading" constant="25" id="auH-Fm-wb9"/>
+                                    <constraint firstAttribute="trailing" secondItem="5oK-Ai-h6B" secondAttribute="trailing" constant="24" id="kAb-cN-siG"/>
+                                    <constraint firstItem="5oK-Ai-h6B" firstAttribute="leading" secondItem="KBZ-te-dmh" secondAttribute="leading" constant="24" id="yKk-8A-Xwt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sAG-9p-V9P"/>
+                        <color key="backgroundColor" name="mainWhite"/>
+                        <constraints>
+                            <constraint firstItem="4qG-KB-crX" firstAttribute="top" secondItem="sAG-9p-V9P" secondAttribute="top" constant="15" id="2Tk-Gh-2lN"/>
+                            <constraint firstItem="4qG-KB-crX" firstAttribute="leading" secondItem="sAG-9p-V9P" secondAttribute="leading" constant="10" id="EO1-c2-Ywj"/>
+                            <constraint firstItem="XEu-R0-abt" firstAttribute="top" secondItem="4qG-KB-crX" secondAttribute="bottom" constant="5" id="H2n-gA-Bf1"/>
+                            <constraint firstItem="sAG-9p-V9P" firstAttribute="trailing" secondItem="KBZ-te-dmh" secondAttribute="trailing" id="NRY-Da-756"/>
+                            <constraint firstItem="KBZ-te-dmh" firstAttribute="top" secondItem="XEu-R0-abt" secondAttribute="bottom" constant="22" id="PsO-Gf-lJm"/>
+                            <constraint firstItem="sAG-9p-V9P" firstAttribute="trailing" secondItem="XEu-R0-abt" secondAttribute="trailing" constant="23" id="QAv-g1-LI0"/>
+                            <constraint firstItem="XEu-R0-abt" firstAttribute="leading" secondItem="sAG-9p-V9P" secondAttribute="leading" constant="23" id="gJ8-qQ-1H8"/>
+                            <constraint firstItem="KBZ-te-dmh" firstAttribute="leading" secondItem="sAG-9p-V9P" secondAttribute="leading" id="jwE-3n-Kih"/>
+                            <constraint firstAttribute="bottom" secondItem="KBZ-te-dmh" secondAttribute="bottom" id="nE9-z7-g7S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="4qG-KB-crX" id="nou-52-OdI"/>
+                        <outlet property="checkEmailLabel" destination="Uej-q5-dXk" id="IhL-bl-EGn"/>
+                        <outlet property="checkPasswordLabel" destination="QoC-8V-hBd" id="SM9-uD-9qh"/>
+                        <outlet property="checkPasswordTextField" destination="OUn-ci-o3S" id="fND-0E-aJ4"/>
+                        <outlet property="codeLabel" destination="o6R-PE-NGx" id="itx-AE-Rx0"/>
+                        <outlet property="codeTextField" destination="0It-V0-nfM" id="IHu-B4-NnG"/>
+                        <outlet property="containerView" destination="KBZ-te-dmh" id="YW7-aA-5p2"/>
+                        <outlet property="continueButton" destination="Uts-JQ-6d6" id="JOV-j6-tD0"/>
+                        <outlet property="passwordLabel" destination="Uls-DN-DwT" id="kIv-b2-Hjr"/>
+                        <outlet property="passwordTextField" destination="jsd-i0-FxZ" id="p6b-5u-0Q1"/>
+                        <outlet property="titleLabel" destination="jl8-A6-yJT" id="ePN-8C-cMt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LNJ-WX-asI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1548" y="781"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo_img" width="137" height="74"/>
+        <image name="apple_img" width="57" height="57"/>
+        <image name="backButton_img" width="8" height="13"/>
+        <image name="bottom_arrow" width="7" height="6"/>
+        <image name="facebook_img" width="57" height="57"/>
+        <image name="google_img" width="57" height="57"/>
+        <namedColor name="lightGrey">
+            <color red="0.58039215686274515" green="0.57647058823529407" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainBlue">
+            <color red="0.0" green="0.5725490196078431" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainDark">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainRed">
+            <color red="1" green="0.29019607843137257" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainWhite">
+            <color red="0.95686274509803926" green="0.95686274509803926" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="separatorBg">
+            <color red="0.9137254901960784" green="0.9137254901960784" blue="0.9137254901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

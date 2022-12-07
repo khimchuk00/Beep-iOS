@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MainCollectionViewCell" id="o9E-iD-ctz" customClass="MainCollectionViewCell" customModule="BeepIos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="245" height="287"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="TWe-ep-B3c">
+                <rect key="frame" x="0.0" y="0.0" width="245" height="287"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iMh-0r-985" customClass="MainButton" customModule="BeepIos" customModuleProvider="target">
+                        <rect key="frame" x="10" y="246" width="225" height="31"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="31" id="YQC-BT-23k"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="Изменить">
+                            <fontDescription key="titleFontDescription" name="Roboto-Medium" family="Roboto" pointSize="13"/>
+                            <color key="baseForegroundColor" name="mainBlue"/>
+                        </buttonConfiguration>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="style">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="buttonDidTap" destination="o9E-iD-ctz" eventType="touchUpInside" id="60D-fx-1Uy"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub6-oi-nDB">
+                        <rect key="frame" x="12" y="90" width="221" height="144"/>
+                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="15"/>
+                        <color key="textColor" name="mainDark"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tz-WN-nuT">
+                        <rect key="frame" x="95.5" y="24" width="54" height="54"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-c1-BrW">
+                                <rect key="frame" x="14" y="14" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="iBX-Nc-Xji"/>
+                                    <constraint firstAttribute="width" constant="26" id="vsq-32-okz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0qW-c1-BrW" firstAttribute="centerX" secondItem="2tz-WN-nuT" secondAttribute="centerX" id="NSN-Lx-k3B"/>
+                            <constraint firstAttribute="height" constant="54" id="OXV-hh-4Fe"/>
+                            <constraint firstAttribute="width" constant="54" id="iXJ-zm-qie"/>
+                            <constraint firstItem="0qW-c1-BrW" firstAttribute="centerY" secondItem="2tz-WN-nuT" secondAttribute="centerY" id="vGN-kD-EvA"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3l5-r6-mPU">
+                        <rect key="frame" x="195" y="10" width="40" height="25"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dh8-Z0-3JX">
+                                <rect key="frame" x="0.0" y="0.0" width="40" height="25"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <color key="textColor" name="mainRed"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="CRX-gt-fhH"/>
+                            <constraint firstAttribute="trailing" secondItem="dh8-Z0-3JX" secondAttribute="trailing" id="H9d-1l-xIr"/>
+                            <constraint firstAttribute="bottom" secondItem="dh8-Z0-3JX" secondAttribute="bottom" id="KCm-an-RcI"/>
+                            <constraint firstItem="dh8-Z0-3JX" firstAttribute="leading" secondItem="3l5-r6-mPU" secondAttribute="leading" id="bUp-tB-a6y"/>
+                            <constraint firstAttribute="height" constant="25" id="hgE-j8-Pxz"/>
+                            <constraint firstItem="dh8-Z0-3JX" firstAttribute="top" secondItem="3l5-r6-mPU" secondAttribute="top" id="i1v-qr-AwT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ub6-oi-nDB" secondAttribute="trailing" constant="12" id="CK8-EC-TGb"/>
+                    <constraint firstItem="iMh-0r-985" firstAttribute="leading" secondItem="TWe-ep-B3c" secondAttribute="leading" constant="10" id="OKL-8g-hYn"/>
+                    <constraint firstItem="ub6-oi-nDB" firstAttribute="leading" secondItem="TWe-ep-B3c" secondAttribute="leading" constant="12" id="PGp-Kx-SJS"/>
+                    <constraint firstItem="ub6-oi-nDB" firstAttribute="top" secondItem="2tz-WN-nuT" secondAttribute="bottom" constant="12" id="YzM-J9-XYr"/>
+                    <constraint firstAttribute="bottom" secondItem="iMh-0r-985" secondAttribute="bottom" constant="10" id="ZMg-25-1mq"/>
+                    <constraint firstAttribute="trailing" secondItem="iMh-0r-985" secondAttribute="trailing" constant="10" id="dsA-aK-NzD"/>
+                    <constraint firstItem="2tz-WN-nuT" firstAttribute="top" secondItem="TWe-ep-B3c" secondAttribute="top" constant="24" id="f1o-lF-bw7"/>
+                    <constraint firstItem="2tz-WN-nuT" firstAttribute="centerX" secondItem="TWe-ep-B3c" secondAttribute="centerX" id="jb8-Oy-zrU"/>
+                    <constraint firstAttribute="trailing" secondItem="3l5-r6-mPU" secondAttribute="trailing" constant="10" id="mhC-yq-1jV"/>
+                    <constraint firstItem="3l5-r6-mPU" firstAttribute="top" secondItem="TWe-ep-B3c" secondAttribute="top" constant="10" id="rKx-kn-Yiu"/>
+                    <constraint firstItem="iMh-0r-985" firstAttribute="top" secondItem="ub6-oi-nDB" secondAttribute="bottom" constant="12" id="svv-7J-VmM"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="245" height="287"/>
+            <connections>
+                <outlet property="containerView" destination="TWe-ep-B3c" id="lTQ-La-8yG"/>
+                <outlet property="imageContainerView" destination="2tz-WN-nuT" id="iit-kY-8bs"/>
+                <outlet property="mainButton" destination="iMh-0r-985" id="j45-c6-GOD"/>
+                <outlet property="mainImageView" destination="0qW-c1-BrW" id="Pcl-of-isR"/>
+                <outlet property="proView" destination="dh8-Z0-3JX" id="F3A-5q-zY3"/>
+                <outlet property="titleLabel" destination="ub6-oi-nDB" id="Mpz-wM-HPe"/>
+            </connections>
+            <point key="canvasLocation" x="194.92753623188406" y="174.44196428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="mainBlue">
+            <color red="0.0" green="0.5725490196078431" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainDark">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="mainRed">
+            <color red="1" green="0.29019607843137257" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,122 @@
+{
+  "identifier" : "930C511F",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+
+  ],
+  "settings" : {
+
+  },
+  "subscriptionGroups" : [
+    {
+      "id" : "7B3854B8",
+      "localizations" : [
+
+      ],
+      "name" : "One month",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "6.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "52E4438E",
+          "introductoryOffer" : {
+            "displayPrice" : "6.99",
+            "internalID" : "8525BAF7",
+            "numberOfPeriods" : 1,
+            "paymentMode" : "payAsYouGo",
+            "subscriptionPeriod" : "P1M"
+          },
+          "localizations" : [
+            {
+              "description" : "Month pemium subscription",
+              "displayName" : "One month",
+              "locale" : "en_US"
+            },
+            {
+              "description" : "Місячна преміум підписка ",
+              "displayName" : "Місячна підписка",
+              "locale" : "uk"
+            }
+          ],
+          "productID" : "com.maritech.beep.oneMonth",
+          "recurringSubscriptionPeriod" : "P1M",
+          "referenceName" : "One month",
+          "subscriptionGroupID" : "7B3854B8",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    },
+    {
+      "id" : "509AC1EA",
+      "localizations" : [
+
+      ],
+      "name" : "Half year",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "36.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "73D0E5E1",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "Half year subscription",
+              "displayName" : "Half year",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.maritech.beep.halfYear",
+          "recurringSubscriptionPeriod" : "P6M",
+          "referenceName" : "Half year",
+          "subscriptionGroupID" : "509AC1EA",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    },
+    {
+      "id" : "50BB242F",
+      "localizations" : [
+
+      ],
+      "name" : "One year ",
+      "subscriptions" : [
+        {
+          "adHocOffers" : [
+
+          ],
+          "displayPrice" : "46.99",
+          "familyShareable" : false,
+          "groupNumber" : 1,
+          "internalID" : "2C910AE9",
+          "introductoryOffer" : null,
+          "localizations" : [
+            {
+              "description" : "One year subscription ",
+              "displayName" : "One year",
+              "locale" : "en_US"
+            }
+          ],
+          "productID" : "com.maritech.beep.oneYear",
+          "recurringSubscriptionPeriod" : "P1Y",
+          "referenceName" : "One year",
+          "subscriptionGroupID" : "50BB242F",
+          "type" : "RecurringSubscription"
+        }
+      ]
+    }
+  ],
+  "version" : {
+    "major" : 1,
+    "minor" : 1
+  }
+}

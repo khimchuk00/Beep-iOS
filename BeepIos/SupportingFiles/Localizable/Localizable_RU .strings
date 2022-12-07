@@ -1,0 +1,42 @@
+"Onboarding-first-title" = "Приветствуем в BEEP.NFC! Удобое приложение для управления своими данными \n 😍";
+"Onboarding-second-title" = "Изменения данных легко и просто, только попробуй👌🏻";
+"Onboarding-second-description" = "Изменяй, дублируй, корректируй. Всё в одном месте";
+"Onboarding-third-title" = "Быстрый коннект с вашим продуктом и синхронизацией";
+"Onboarding-third-description" = "Меняешь в приложении, данные сразу меняются и на сайте";
+"Onboarding-enter" = "Войти";
+"Onboarding-register" = "Регистрация";
+
+"Settings-plan-cell-title" = "Мой план";
+"Settings-plan-cell-description" = "Активировать";
+"Settings-plan-cell-month-description" = "На месяц";
+"Settings-plan-cell-half-description" = "На полгода";
+"Settings-plan-cell-year-description" = "На год";
+"Settings-ref-cell-title" = "Зарабатывайте на реферальной программе";
+"Settings-profile-cell-title" = "Твой профиль BEEP";
+"Settings-theme-black-cell-title" = "Стиль визитки BEEP: темная";
+"Settings-theme-white-cell-title" = "Стиль визитки BEEP: светлая";
+"Settings-callUs-cell-title" = "Свяжитесь с нами";
+"Settings-activate-cell-title" = "Активировать BEEP";
+"Settings-howToUse-cell-title" = "Как использовать BEEP";
+"Settings-delete-cell-title" = "Удалить профиль";
+"Settings-password-cell-title" = "Изменить пароль";
+"Settings-exit-cell-title" = "Выйти";
+"Settings-light-mode-title" = "Светлая тема";
+"Settings-dark-mode-title" = "Темная тема";
+"Settings-language-title" = "Языковые настройки:";
+
+"Dashboard-networks-title" = "Социальные сети";
+"Dashboard-messgers-title" = "Мессенджеры";
+"Dashboard-contacts-title" = "Личные контакты";
+"Dashboard-music-title" = "Музыкальные платформы";
+"Dashboard-videos-title" = "Видеохостинги";
+"Dashboard-moneys-title" = "Денежные переводы";
+"Dashboard-portfolio-title" = "Портфолио";
+"Dashboard-games-title" = "Гейминг";
+"Dashboard-review-title" = "Оставить отзыв";
+"Dashboard-getThere-title" = "Как добраться";
+
+
+"TabBar-card-title" = "Моя визитка";
+"TabBar-code-title" = "Мой qr-code";
+"TabBar-settings-title" = "Настройки";

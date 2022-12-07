@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MainTableViewSectionHeader" customModule="BeepIos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="663" height="38"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lyv-8l-41V">
+                    <rect key="frame" x="25" y="0.0" width="613" height="38"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nay-r5-KVP">
+                            <rect key="frame" x="25" y="10" width="563" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="YVS-hT-KMX"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Социальные сети ">
+                                <fontDescription key="titleFontDescription" name="Roboto-Medium" family="Roboto" pointSize="16"/>
+                                <color key="baseForegroundColor" name="mainDark"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="mainButtonDidTap" destination="iN0-l3-epB" eventType="touchUpInside" id="Z9l-v7-32Y"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nay-r5-KVP" secondAttribute="trailing" constant="25" id="AGo-oi-CLE"/>
+                        <constraint firstItem="nay-r5-KVP" firstAttribute="leading" secondItem="Lyv-8l-41V" secondAttribute="leading" constant="25" id="N3w-XA-Nsb"/>
+                        <constraint firstAttribute="bottom" secondItem="nay-r5-KVP" secondAttribute="bottom" constant="10" id="UPf-TR-tlB"/>
+                        <constraint firstItem="nay-r5-KVP" firstAttribute="top" secondItem="Lyv-8l-41V" secondAttribute="top" constant="10" id="hs6-Zc-HrN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Lyv-8l-41V" secondAttribute="trailing" constant="25" id="8r1-JI-FwO"/>
+                <constraint firstItem="Lyv-8l-41V" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="I8L-ca-IvX"/>
+                <constraint firstAttribute="bottom" secondItem="Lyv-8l-41V" secondAttribute="bottom" id="rsY-IE-zHR"/>
+                <constraint firstItem="Lyv-8l-41V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vLb-sz-oca"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="containerView" destination="Lyv-8l-41V" id="4ZY-sv-eau"/>
+                <outlet property="mainButton" destination="nay-r5-KVP" id="YEE-8L-FlF"/>
+            </connections>
+            <point key="canvasLocation" x="318.11594202898556" y="-150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="mainDark">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

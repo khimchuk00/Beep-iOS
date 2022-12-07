@@ -1,0 +1,41 @@
+"Onboarding-first-title" = "Welcome to BEEP.NFC! A convenient application for managing your data \n 😍";
+"Onboarding-second-title" = "Changing data is easy and simple, just try👌🏻";
+"Onboarding-second-description" = "Change, duplicate, correct. All in one place";
+"Onboarding-third-title" = "Quick connection with your product and synchronization";
+"Onboarding-third-description" = "You change in the application, the data immediately change on the site";
+"Onboarding-enter" = "Enter";
+"Onboarding-register" = "Register";
+
+"Settings-plan-cell-title" = "My plan";
+"Settings-plan-cell-description" = "Activate";
+"Settings-plan-cell-month-description" = "On month";
+"Settings-plan-cell-half-description" = "On half year";
+"Settings-plan-cell-year-description" = "On year";
+"Settings-ref-cell-title" = "Earn on the referral program";
+"Settings-profile-cell-title" = "Your BEEP profile";
+"Settings-theme-black-cell-title" = "BEEP card style: black";
+"Settings-theme-white-cell-title" = "BEEP card style: white";
+"Settings-callUs-cell-title" = "Contact us";
+"Settings-activate-cell-title" = "Activate BEEP";
+"Settings-howToUse-cell-title" = "How to use BEEP";
+"Settings-delete-cell-title" = "Delete profile";
+"Settings-password-cell-title" = "Change password";
+"Settings-exit-cell-title" = "Exit";
+"Settings-light-mode-title" = "Light theme";
+"Settings-dark-mode-title" = "Dark theme";
+"Settings-language-title" = "Language settings:";
+
+"Dashboard-networks-title" = "Соціальні мережі";
+"Dashboard-messgers-title" = "Месенджери";
+"Dashboard-contacts-title" = "Особисті контакти";
+"Dashboard-music-title" = "Музичні платформи";
+"Dashboard-videos-title" = "Відеохостинги";
+"Dashboard-moneys-title" = "Грошові перекази";
+"Dashboard-portfolio-title" = "Портфоліо";
+"Dashboard-games-title" = "Геймінг";
+"Dashboard-review-title" = "Залишити відгук";
+"Dashboard-getThere-title" = "Як добратись";
+
+"TabBar-card-title" = "My card";
+"TabBar-code-title" = "My qr-code";
+"TabBar-settings-title" = "Settings";

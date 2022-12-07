@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ThemeCell" rowHeight="75" id="pGw-u5-gJ1" customClass="ThemeCell" customModule="BeepIos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="626" height="75"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGw-u5-gJ1" id="bnT-Cl-jxG">
+                <rect key="frame" x="0.0" y="0.0" width="626" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plan_img" translatesAutoresizingMaskIntoConstraints="NO" id="LNv-50-qzh">
+                        <rect key="frame" x="0.0" y="26" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="60Z-tU-745"/>
+                            <constraint firstAttribute="height" constant="23" id="NCS-CW-VDl"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kUQ-0f-qJY">
+                        <rect key="frame" x="37" y="13" width="520" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mQ-cv-ZTx">
+                                <rect key="frame" x="0.0" y="0.0" width="520" height="49"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                <color key="textColor" name="mainDark"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XsA-JN-Xdr">
+                        <rect key="frame" x="577" y="22" width="51" height="31"/>
+                        <connections>
+                            <action selector="valueChanged" destination="pGw-u5-gJ1" eventType="valueChanged" id="uy4-QV-Ee1"/>
+                        </connections>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XsA-JN-Xdr" firstAttribute="centerY" secondItem="kUQ-0f-qJY" secondAttribute="centerY" id="0K1-wq-fhF"/>
+                    <constraint firstAttribute="trailing" secondItem="XsA-JN-Xdr" secondAttribute="trailing" id="Iah-vX-a5h"/>
+                    <constraint firstItem="LNv-50-qzh" firstAttribute="centerY" secondItem="kUQ-0f-qJY" secondAttribute="centerY" id="Pt5-BE-BKM"/>
+                    <constraint firstItem="XsA-JN-Xdr" firstAttribute="leading" secondItem="kUQ-0f-qJY" secondAttribute="trailing" constant="20" id="Qtn-Qq-P1q"/>
+                    <constraint firstItem="LNv-50-qzh" firstAttribute="leading" secondItem="bnT-Cl-jxG" secondAttribute="leading" id="Vn7-N9-V0w"/>
+                    <constraint firstItem="kUQ-0f-qJY" firstAttribute="leading" secondItem="LNv-50-qzh" secondAttribute="trailing" constant="14" id="Wez-Qw-te7"/>
+                    <constraint firstAttribute="bottom" secondItem="kUQ-0f-qJY" secondAttribute="bottom" constant="13" id="dy9-Jb-Cy1"/>
+                    <constraint firstItem="kUQ-0f-qJY" firstAttribute="top" secondItem="bnT-Cl-jxG" secondAttribute="top" constant="13" id="wla-Ah-8sr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellImageView" destination="LNv-50-qzh" id="Ga0-5a-qE8"/>
+                <outlet property="switcher" destination="XsA-JN-Xdr" id="Z3K-cT-6JF"/>
+                <outlet property="titleLabel" destination="8mQ-cv-ZTx" id="QBy-Bt-UU2"/>
+            </connections>
+            <point key="canvasLocation" x="152.17391304347828" y="77.34375"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plan_img" width="23" height="23"/>
+        <namedColor name="mainDark">
+            <color red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
